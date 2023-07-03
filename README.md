@@ -99,7 +99,29 @@ server:
 
 ```
 
-# Navigate to the overview dashboard
+# Step 6: Enable "Show Docker Extensions systems containers"
+
+![image](./images/ExtensionSettings.png)
+
+![image](./images/ExtensionSettingBox.png)
+
+# Step 7: Get the extension containers IDs 
+
+```
+docker ps
+```
+
+# Step 8: Add the extension containers to the grafanet network
+
+![image](./images/dockerps.png)
+
+```
+docker network connect grafanet <grafana agent ID>
+
+docker network connect fafanet <grafana docker desktop extension ID>
+```
+
+# Step 9: Navigate to the overview dashboard
 
 http://localhost:3000/d/docker-desktop-integration-docker/docker-desktop-docker-overview?orgId=1&refresh=30s
 
