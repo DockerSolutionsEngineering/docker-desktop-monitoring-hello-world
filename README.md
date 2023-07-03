@@ -116,9 +116,9 @@ docker ps
 ![image](./images/dockerps.png)
 
 ```
-docker network connect grafanet <grafana agent ID>
+docker network connect docker-desktop-monitoring-hello-world_grafanet <grafana agent ID>
 
-docker network connect fafanet <grafana docker desktop extension ID>
+docker network connect docker-desktop-monitoring-hello-world_grafanet <grafana docker desktop extension ID>
 ```
 
 # Step 9: Navigate to the overview dashboard
